@@ -1,0 +1,8 @@
+language: csharp
+solution: Pool4Net.sln
+
+matrix:
+  include:
+    - dotnet: 2.1.502
+      mono: none
+    - mono: latest
