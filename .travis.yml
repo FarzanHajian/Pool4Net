@@ -2,7 +2,7 @@ language: csharp
 solution: Pool4Net.sln
 
 mono: none
-dotnet: 2.0.0
+dotnet: 2.1.502
 script:
   - dotnet restore
   - dotnet build
