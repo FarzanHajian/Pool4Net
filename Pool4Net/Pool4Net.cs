@@ -45,10 +45,10 @@ namespace Pool4Net
             storage[DEFAULT_GROUP].Add(item);
         }
 
-        public void Release(string key, T item)
+        public void Release(string group, T item)
         {
             cleaner?.Invoke(item);
-            storage[key].Add(item);
+            storage[group].Add(item);
         }
     }
 }
